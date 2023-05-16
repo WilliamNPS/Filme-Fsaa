@@ -1,0 +1,421 @@
+
+/* Padrão --------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body { 
+ color: white;
+ background-color: #040023;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Menu---------------------------------------------------------------------------------------------------*/
+nav{
+ background-color: #0f5bb8;
+ text-align: center;
+font-size: 25px;
+color: white;
+box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.74);
+}
+li,ul {
+    padding: 5px;    
+}
+
+.dropdown-menu{
+background-color: #002559;
+color: white;
+font-size: 20px;
+font-weight:bolder;
+}
+
+.dropdown-item{
+    color: white;
+    background-color: #040023;
+}
+
+.titulo{
+  color: white;
+
+  font-size: 30px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.titulo2{
+ color: #ff0000;
+}
+
+/*sliders do home*/
+#carouselExampleCaptions,
+#carouselExampleCaptions2,
+#carouselExampleCaptions3 {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 20px; 
+
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.993);
+}
+.carousel {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #carouselExampleCaptions,
+  #carouselExampleCaptions2,
+  #carouselExampleCaptions3 {
+    margin: 0 10px 20px;
+  }
+}
+.descricao {
+  margin-bottom: 20px;
+  font-weight: bolder;
+  text-shadow: 3px 3p 3px rgba(0, 0, 0, 0.877);
+}
+
+
+.slider {
+  text-decoration: none;
+ font-size: 30px;
+ font-weight: bolder;
+  color: #ff0000;
+  padding-top: 30px;
+}
+
+.slider:hover {
+  color: aliceblue;
+}
+
+.carousel-item{
+  padding-bottom: 30px
+}
+
+.full {
+  background-image: url("img/banner2.jpg");
+  opacity: 0.5;
+}
+
+
+/* estilos base para a seção de séries --------------------------------------------------------*/
+.series {
+    background-color: #011446;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+  }
+  .series img {
+
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+  }
+
+  .serieslink{
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  
+  
+  .serieslink:hover {
+    color: #ffff;
+  }
+
+  .titulo3{
+    color: #ff0000;
+    font-weight: bolder;
+    padding: 15px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.61);
+  }
+  /* Top 10 da semana */
+  .add {
+    background-color: #F23030;
+    padding: 50px;
+  }
+  
+  .add h1 {
+    margin-bottom: 30px;
+  }
+  
+  .add img {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* regras para telas menores */
+  @media screen and (max-width: 768px) {
+    .series,
+    .add {
+      padding: 20px;
+    }
+  
+    .series h1,
+    .add h1 {
+      margin-bottom: 2px;
+    }
+  
+    .series img,
+    .add img {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .adicionados,.adicionado
+     {
+      font-size: 20px;
+      padding-bottom: 10px ;
+      text-align: center;
+    }
+
+  }
+  @media screen and (max-width: 868px) {
+    .adicionados,.adicionado
+     {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
+
+  .adicionados {
+    margin-top: 210px;
+    background-color: #012C61;
+   
+  }
+
+
+  .subir {
+    margin-top: -200px;
+    margin-left: -20px;
+  }
+
+
+
+
+  /*roda pe´*/
+  .rodape {
+    margin-top: 50px;
+   
+  }
+
+
+  a {
+    text-decoration: none;
+    color: white;
+
+  }
+
+
+  a:hover{
+ 
+    color: #0f5bb8;
+
+  }
+
+
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+
+
+ 
+
+
+  
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+  footer {
+    background-color: black;
+     margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+
+ 
+   }
+
+
+   /*Utilitarios*/
+   .center {
+    text-align: center;
+
+   }
+
+   .top {
+    margin-top: 20px;
+   }
+
+
+   .resumo {
+   border-left: 3px solid #ff0000;
+    color: white;
+   }
+
+   .titulo4 {
+    background-color: #012C61;
+    color: #ff0000;
+    font-weight: bolder;
+   }
+
+
+   .devs {
+   
+    margin-top: 30px;
+   }
+
+   svg {
+    margin-left: 10px;
+   }
+
+
+   .button {
+    font-size: 20px;
+    background-color: #ff0000;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-align: center;
+   
+    width: 100px;
+   }
+
+   .button:hover {
+     background-color: black;
+     color: #ff0000;
+   }
+
+   .button > a {
+    color: #ffff;
+    font-weight: bold;
+   }
+
+
+   @media(max-width: 767px) {
+    .col-md-9 {
+    margin-bottom: 20px;
+    }
+    
+    .titulo3 {
+    font-size: 24px;
+    }
+    
+    .descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    
+    .col-md-3 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .img-fluid {
+    max-width: 100%;
+    }
+    
+    .button {
+    margin-bottom: 20px;
+    }
+    
+    .assistir-agora {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: auto;
+    }
+    
+    .embed-responsive {
+    margin-bottom: 20px;
+    }
+    }
+
+
+    .filmes2 {
+      margin-top: 40px;
+      
+    }
+
+
+    .tamanho {
+      text-align: center;
+      margin: auto;
+     
+    }
+
+
+
+    iframe {
+      width:400px ;
+      height: 250px;
+
+    }
+
+
+    
+    @media screen and (max-width: 768px) {
+      .iframe
+       {
+        width: 250px ;
+        height: 200px;
+      }
+
+    }
+
+
+    /*Modal   */
+    .btn {
+      color: #ffff;
+      font-size: 25px;
+    }
+
+
+    .btn:hover {
+      color: #0f5bb8;
+    }
+
+    a:hover {
+      text-decoration: none;
+      
+    }
+
+ 
